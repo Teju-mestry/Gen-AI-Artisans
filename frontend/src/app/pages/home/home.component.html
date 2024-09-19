@@ -1,0 +1,44 @@
+<section class="px-2 py-8 mb-12 bg-white md:px-0">
+  <div class="container items-center max-w-6xl px-8 mx-auto">
+    <div class="flex flex-wrap items-center sm:-mx-8">
+      <div class="w-full md:w-1/2 md:pr-8">
+        <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
+          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <span class="block xl:inline">Create a new </span>
+            <span class="block text-lime-600 xl:inline" data-primary="lime-600">BANNER</span>
+            <img class="object-cover w-8 h-8" src="../../../assets/icons8-magic-64.png" loading="lazy">
+          </h1>
+          <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">AI powered high-quality banners and/or videos generate here by giving required theme, color, product images and promotional offers.</p>
+
+          <!-- <div class="relative flex flex-col sm:flex-row sm:space-x-4">
+            <a  class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-lime-600 rounded-md sm:mb-0 hover:bg-lime-700 sm:w-auto" data-primary="lime-600" data-rounded="rounded-md">
+
+              <svg class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div> -->
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 min-h-48 hover:cursor-pointer " (click)="createBanner()">
+          <div class="flex h-72 border border-lime-700  items-center justify-center w-full px-6 py-3 mb-3 text-lg text-grey rounded-md sm:mb-0  sm:w-auto" data-primary="lime-600" data-rounded="rounded-md">
+            <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 14H12M12 14H14M12 14V16M12 14V12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 11.7979C22 9.16554 22 7.84935 21.2305 6.99383C21.1598 6.91514 21.0849 6.84024 21.0062 6.76946C20.1506 6 18.8345 6 16.2021 6H15.8284C14.6747 6 14.0979 6 13.5604 5.84678C13.2651 5.7626 12.9804 5.64471 12.7121 5.49543C12.2237 5.22367 11.8158 4.81578 11 4L10.4497 3.44975C10.1763 3.17633 10.0396 3.03961 9.89594 2.92051C9.27652 2.40704 8.51665 2.09229 7.71557 2.01738C7.52976 2 7.33642 2 6.94975 2C6.06722 2 5.62595 2 5.25839 2.06935C3.64031 2.37464 2.37464 3.64031 2.06935 5.25839C2 5.62595 2 6.06722 2 6.94975M21.9913 16C21.9554 18.4796 21.7715 19.8853 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V11" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 bg-gray-100 rounded-2xl shadow-lg">
+  <div class="max-w-6xl px-10 pb-8 mx-auto xl:max-w-7xl text-center">
+    <h2 class="font-bold  text-3xl xl:text-4xl text-gray-900">Recent work</h2>
+  </div>
+
+  <div class="max-w-6xl px-10 mx-auto xl:max-w-7xl">
+    <app-latest-banners [limit]="4"></app-latest-banners>
+  </div>
+
+  <!-- <div class="w-full mx-auto pt-10 flex justify-center items-center">
+    <button (click)="mostSearched()" type="button" class="w-full sm:w-auto shadow-lg px-8 py-3 border border-transparent text-base leading-6 font-bold rounded-full text-white bg-gradient-to-r from-red-600 to-neutral-900 hover:from-lime-500 hover:to-lime-400 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-base cursor-pointer focus:ring-2 focus:ring-offset-2 focus:ring-lime-500">
+      Most Searched
+    </button>
+  </div> -->
+</section>
